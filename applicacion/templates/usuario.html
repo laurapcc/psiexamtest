@@ -1,0 +1,22 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    {% if error %}
+    {{ error }}
+    {% endif %}
+    Retweets del usuario {{ username }}
+    <table>
+        {% for rt in retweets %}
+        <tr>
+            <th>{{ rt.usuario.id }}</th>
+            <td>{{ rt.usuario.username }}</td>
+            <td>{{ rt.fechaDeRetweet }}</td>
+        </tr>
+        {% endfor %}
+        </table>
+</body>
+
+</html>

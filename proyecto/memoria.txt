@@ -1,0 +1,39 @@
+EXAM PSI 13/12/2021
+Laura de Paz Carbajo
+
+
+PROJECT and APPLICATION
+First of all, I created the project ----- and the application ----- and registered the application in the settings file.
+
+
+DATABASE
+I created the database with the following command: 'createdb -U alumnodb -h localhost ----examendb---' and I changed the DATABASE 
+variable in setting.py just as we did during this course.
+
+
+MODELS
+I created the models following the pdf provided and creating the relationships between them when needed.
+AAA --foreign key --> BBB
+AAA --foreign key --> BBB
+
+I register each f these models in the app's admin file so that the admin and then I make the migration with 
+django commands (python3 manage.py makemigrations and python3 manage.py migrate). Now if I visit https://127.0.0.1:8001/admin
+and I login with our superuser (previously created) I can see that the admin has full control over the models.
+
+
+---POPULATE.py---
+I created ---populate.py--- in the directory ----app--/management/commands and created a new command '---populate---'.
+In its handle I created some objects of the the type ---model1--, ---model2--- and then checked from the admin site that
+the had been correctly created.
+
+
+VIEWS
+I created the view -------- that ----lo que hace---.
+It returns the template ----------- rendered and with its context containing the variables --------
+
+
+TEST
+I created a test for the ---app--- application that -----lo que hace ---- and checked that it passed.
+
+
+HEROKU
